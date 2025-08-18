@@ -1547,3 +1547,19 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+/* Força todos os botões outline a ficarem pretos */
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-info {
+  color: black !important;       /* cor do texto */
+  border-color: black !important; /* cor da borda */
+}
+
+/* Quando passar o mouse */
+.btn-outline-primary:hover,
+.btn-outline-success:hover,
+.btn-outline-info:hover {
+  background-color: black !important;
+  color: white !important; /* texto branco no hover */
+}
