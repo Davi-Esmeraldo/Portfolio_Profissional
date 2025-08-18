@@ -25,6 +25,7 @@
     
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -155,8 +156,9 @@
 								</div>
 							</div>
 						</div> 
+						<!-- CARD -->
 						<div class="col-md-4"> 
-  						<div class="blog-entry ftco-animate work-card" data-bs-toggle="modal" data-bs-target="#linkOptionsModal" style="cursor: pointer;">
+  						<div class="blog-entry ftco-animate work-card" data-toggle="modal" data-target="#linkOptionsModal" style="cursor: pointer;">
     						<div class="img img-2" style="background-image: url(images/image_4.png);"></div>
     						<div class="text text-2 pt-2 mt-3">
       						<span class="category mb-3 d-block">
@@ -170,7 +172,7 @@
       						</p>
       						<div class="half">
         						<p>
-          						<a href="javascript:void(0)" class="btn py-2" data-bs-toggle="modal" data-bs-target="#linkOptionsModal">
+          						<a href="javascript:void(0)" class="btn py-2" data-toggle="modal" data-target="#linkOptionsModal">
             						Visualizar <span class="ion-ios-arrow-forward"></span>
           						</a>
         						</p>
@@ -179,30 +181,31 @@
   						</div>
 						</div>
 
-						<!-- Modal Bootstrap -->
-						<div class="modal fade" id="linkOptionsModal" tabindex="-1" aria-labelledby="linkOptionsLabel" aria-hidden="true">
-  						<div class="modal-dialog modal-dialog-centered">
+						<!-- MODAL (Bootstrap 4) -->
+						<div class="modal fade" id="linkOptionsModal" tabindex="-1" role="dialog" aria-labelledby="linkOptionsLabel" aria-hidden="true">
+  						<div class="modal-dialog modal-dialog-centered" role="document">
     						<div class="modal-content">
       						<div class="modal-header">
         						<h5 class="modal-title" id="linkOptionsLabel">Escolha o que deseja visualizar</h5>
-        						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        						<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          						<span aria-hidden="true">&times;</span>
+        						</button>
       						</div>
       						<div class="modal-body text-center">
-        						<div class="d-grid gap-2">
-          						<a href="https://drive.google.com/file/d/10HpKss-F3FxG4PZ6OjBY8xeuBFmAQXqb/view?usp=sharing" target="_blank" class="btn btn-outline-primary">
-            						Texto do Trabalho
-          						</a>
-          						<a href="https://drive.google.com/file/d/ID_DA_APRESENTACAO/view?usp=sharing" target="_blank" class="btn btn-outline-success">
-            						Apresentação do Trabalho
-          						</a>
-          						<a href="https://meuapp.streamlit.app" target="_blank" class="btn btn-outline-info">
-            						Aplicativo do Trabalho
-          						</a>
-        						</div>
+        						<a href="https://drive.google.com/file/d/10HpKss-F3FxG4PZ6OjBY8xeuBFmAQXqb/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-block mb-2">
+          						Texto do Trabalho
+        						</a>
+        						<a href="https://drive.google.com/file/d/ID_DA_APRESENTACAO/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-block mb-2">
+          						Apresentação do Trabalho
+        						</a>
+        						<a href="https://meuapp.streamlit.app" target="_blank" class="btn btn-outline-info btn-block">
+          						Aplicativo do Trabalho
+        						</a>
       						</div>
     						</div>
   						</div>
-						</div>	
+						</div>
+	
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								<a href="#" class="img img-2" style="background-image: url(images/Image_3.jpg);"></a>
